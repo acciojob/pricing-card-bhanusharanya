@@ -1,16 +1,63 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        .card {
+            width: 300px;
+            padding: 40px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .card p.price {
+            font-size: 20px;
+            color: green;
+            margin: 10px 0;
+        }
+        .card p.description {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0;
+        }
+        .card .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .card .btn:hover {
+            background-color: yellow;
+            color: black;
+            border-radius: 30px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="card">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.Z12C6e287IjZ3BHjXMrwaAHaEo&pid=Api&P=0&h=180" alt="Product Image">
+    <h1>Pricing Card</h1>
+    <p class="price">Price: Rs.200</p>
+    <p class="description">This is a brief description of the product. It gives essential details and features.</p>
+    <button class="btn">Buy Now</button>
+</div>
 
 </body>
-
 </html>
